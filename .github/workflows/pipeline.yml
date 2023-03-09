@@ -1,6 +1,6 @@
 name: Pipeline
 env:
-  DOCKER_REGISTRY: 135180784361.dkr.ecr.us-east-1.amazonaws.com/app-name-dev
+  DOCKER_REGISTRY: 135180784361.dkr.ecr.us-east-1.amazonaws.com/investment-manager-dev
   INFRA_BASE_PATH: infra/resources
 
 on:

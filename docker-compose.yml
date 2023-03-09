@@ -1,13 +1,15 @@
 version: '3'
 
-volumes:
-  dynamodb_data:
+# volumes:
+#   dynamodb_data:
 
 
 services:
   fastapi:
-    build: .
-    image: app-name
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: investment-manager
     env_file:
       - ./server/.env
     entrypoint: >
@@ -16,5 +18,5 @@ services:
       - ./server/src/app:/var/task/app
     ports:
       - "8000:8000"
-    depends_on:
-      - dynamodb-local
+    # depends_on:
+    #   - dynamodb-local

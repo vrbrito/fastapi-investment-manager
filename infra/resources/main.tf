@@ -7,13 +7,13 @@ terraform {
 
   backend "s3" {
     bucket = "terraform-state-334fa816"
-    key    = "app-name/project.tfstate"
+    key    = "investment-manager/project.tfstate"
     region = "us-east-1"
   }
 }
 
 locals {
-  project_name       = "app-name"
+  project_name       = "investment-manager"
   global_prefix_name = "${local.project_name}-${terraform.workspace}"
 
   env_variables = yamldecode(file("../../server/settings.yml"))["${terraform.workspace}"]

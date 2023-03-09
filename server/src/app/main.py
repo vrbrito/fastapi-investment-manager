@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from mangum import Mangum
 
-app = FastAPI(title="App Name")
+app = FastAPI(title="Investment Manager")
 
 @app.get("/")
 async def root():

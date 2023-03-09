@@ -1,6 +1,6 @@
-# FastAPI AWS Lambda Boilerplate
+# FastAPI Investment Manager
 
-A boilerplate including setup for Fast API and AWS Lambda together with CI/CD included and using Terraform to create AWS resources.
+Personal investment manager service held on a Serveless infrastructure on AWS for consolidating a portfolio across time.
 
 ## Stack
 
@@ -10,12 +10,21 @@ A boilerplate including setup for Fast API and AWS Lambda together with CI/CD in
 - **Infrastructure management**: Terraform
 - **Cloud services**: AWS Lambda + DynamoDB + S3
 
-## Instructions
+## Requirements
 
-- Look for app-name and replace all occurrences with your project name
-- Create virtualenv inside server/
-- Install poetry directly
-- Use poetry install to sync dependencies
-- Init terraform inside infra/
-- Create and select a new workspace
-- Apply all resources existent adjusting for the ones that are not needed
+### Core
+
+- [ ] Persist Prices
+- [ ] Persist Transactions
+- [ ] Persist Dividends
+- [ ] Consolidate Positions from Transactions
+- [ ] Persist Monthly Position
+- [ ] Report Position x Classes
+- [ ] Report Position x Time
+- [ ] Report Monthtly Dividends
+- [ ] Persist Goals
+- [ ] Report Position x Goals
+
+### Infra
+
+TBD

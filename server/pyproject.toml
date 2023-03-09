@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "app-name"
+name = "investment-manager"
 version = "0.1.0"
 description = "App Name"
 authors = ["Vitor Ramalho <ramalhodevitor@gmail.com>"]
